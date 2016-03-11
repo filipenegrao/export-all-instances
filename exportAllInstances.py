@@ -9,6 +9,6 @@ exportFolder = '~/Desktop'
 
 for font in Glyphs.fonts:
 	for instance in font.instances:
-		instance.generate('OTF', exportFolder)
+		instance.generate(Format = 'OTF', FontPath = exportFolder)
 
 	Glyphs.showNotification('Export fonts', 'The export of %s was successful.' % (Glyphs.font.familyName))
