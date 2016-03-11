@@ -1,5 +1,3 @@
-openedFiles = Glyphs.fonts
-
-for file in openedFiles:
-	for instance in openedFiles[file].instances:
-		openedFiles.instances[instance].generate()
+for font in Glyphs.fonts:
+	for instance in font.instances:
+		instance.generate('~/Desktop')
